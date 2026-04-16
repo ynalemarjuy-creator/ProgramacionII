@@ -9,9 +9,14 @@ public class Persona {
         this.edad = edad;
     }
 
-    public void mostrar() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Carnet: " + carnet);
-        System.out.println("Edad: " + edad);
+    public int getEdad() {
+        return edad;
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre +
+               "\nCarnet: " + carnet +
+               "\nEdad: " + edad;
     }
 }

@@ -8,19 +8,15 @@ public class Estudiante extends Persona {
         this.carrera = carrera;
     }
 
-    @Override
-    public void mostrar() {
-        super.mostrar();
-        System.out.println("Matrícula: " + matricula);
-        System.out.println("Carrera: " + carrera);
-        System.out.println("----------------------");
-    }
-
     public String getCarrera() {
         return carrera;
     }
 
-    public int getEdad() {
-        return edad;
+    @Override
+    public String toString() {
+        return super.toString() +
+               "\nMatrícula: " + matricula +
+               "\nCarrera: " + carrera +
+               "\n----------------------";
     }
 }

@@ -9,14 +9,10 @@ public class Docente extends Persona {
     }
 
     @Override
-    public void mostrar() {
-        super.mostrar();
-        System.out.println("Antigüedad: " + antiguedad);
-        System.out.println("Sueldo: " + sueldo);
-        System.out.println("----------------------");
-    }
-
-    public int getEdad() {
-        return edad;
+    public String toString() {
+        return super.toString() +
+               "\nAntigüedad: " + antiguedad +
+               "\nSueldo: " + sueldo +
+               "\n----------------------";
     }
 }
