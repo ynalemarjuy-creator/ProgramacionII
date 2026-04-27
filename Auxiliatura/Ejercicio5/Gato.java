@@ -8,7 +8,5 @@ public class Gato extends Animal {
         this.tomaLeche = tomaLeche;
     }
 
-    public boolean isTomaLeche() {
-        return tomaLeche;
-    }
+    public boolean isTomaLeche() { return tomaLeche; }
 }

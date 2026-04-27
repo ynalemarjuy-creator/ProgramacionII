@@ -7,4 +7,7 @@ public class Perro extends Animal {
         this.requiereBosal = requiereBosal;
         this.ladraFuerte = ladraFuerte;
     }
+
+    public boolean isRequiereBosal() { return requiereBosal; }
+    public boolean isLadraFuerte() { return ladraFuerte; }
 }
